@@ -118,8 +118,6 @@
                         .catch(err => console.log(err));
                 } else {
                     // Update
-                    alert(JSON.stringify(this.article));
-
                     fetch('api/article', {
                         method: 'put',
                         body: JSON.stringify(this.article),
